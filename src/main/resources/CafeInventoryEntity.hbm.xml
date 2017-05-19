@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.models.CafeInventoryEntity" table="CafeInventory" schema="JAVACAFE">
+        <id name="productName">
+            <column name="ProductName" sql-type="varchar(80)" length="80"/>
+        </id>
+        <property name="price">
+            <column name="Price" sql-type="int(11)"/>
+        </property>
+    </class>
+</hibernate-mapping>
